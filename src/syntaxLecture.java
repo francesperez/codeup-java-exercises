@@ -55,5 +55,7 @@ public class syntaxLecture {
         imaFloat = (float) imadouble;
         System.out.println(imaFloat);
 
+        System.out.println((int) Math.pow(2,3));
+
     }
 }
