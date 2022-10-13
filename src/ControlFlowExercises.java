@@ -1,17 +1,21 @@
 public class ControlFlowExercises {
     public static void main(String[] args) {
-//        1. Loop Basics
-//        c. For
-//        Refactor the previous two exercises to use a for loop instead.
-        int counter = 100;
-
-
-        for(int i = 100; i >= -10; i -= 5) {
-            System.out.println(i);
-        }
-
-        for(long i = 2L; i < 1000000; i *= i) {
-            System.out.println(i);
+//        2. Fizz Buzz
+//        One of the most common interview questions for entry-level programmers is the FizzBuzz test. Developed by Imran Ghory, the test is designed to assess basic looping and conditional logic skills.
+        int i = 1;
+        for (i = 1; i <= 100; i++) {
+            if (i % 15 == 0) {
+                System.out.println("FizzBuzz");
+            }
+        else if(i%3 == 0) {
+            System.out.println("Fizz");
+        } else if(i%5 == 0) {
+                System.out.println("Buzz");
+            }
+            else {
+                System.out.println(i);
+            }
         }
     }
 }
+
