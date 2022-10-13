@@ -1,21 +1,30 @@
+import java.util.Scanner;
+
 public class ControlFlowExercises {
     public static void main(String[] args) {
-//        2. Fizz Buzz
-//        One of the most common interview questions for entry-level programmers is the FizzBuzz test. Developed by Imran Ghory, the test is designed to assess basic looping and conditional logic skills.
-        int i = 1;
-        for (i = 1; i <= 100; i++) {
-            if (i % 15 == 0) {
-                System.out.println("FizzBuzz");
-            }
-        else if(i%3 == 0) {
-            System.out.println("Fizz");
-        } else if(i%5 == 0) {
-                System.out.println("Buzz");
-            }
-            else {
-                System.out.println(i);
-            }
-        }
+//        3. Display a table of powers
+//        Scanner scanner = new Scanner(System.in);
+//        String userContinue = "y";
+//        while (userContinue.equalsIgnoreCase("y")){
+//            System.out.println("Enter a number:");
+//            int enterNumber = scanner.nextInt();
+//            System.out.println("Number" + "   " + "Squared" + "   " + "Cubed");
+//            System.out.println("======" + "   " + "=======" + "   " + "=====");
+//
+//            for (int i = 1; i <= enterNumber; i++) {
+//                i = enterNumber;
+//                int iSquared = (int) Math.pow(i, 2);
+//                int iCubed = (int) Math.pow(i, 3);
+//
+//                String output =  i + "         " + iSquared + "         " + iCubed;
+//                System.out.println(output);
+//                System.out.println();
+//
+//                System.out.print("Do you want to enter another number? (y/n): ");
+//                userContinue = scanner.next();
+//            }
+//        }
     }
 }
+
 
