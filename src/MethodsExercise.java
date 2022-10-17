@@ -5,42 +5,66 @@ public class MethodsExercise {
 //    public static int addition(int x, int y) {
 //        return x + y;
 //    }
-//
 //    public static int subtraction(int x, int y) {
 //        return x - y;
 //    }
-//
 //    public static int multiplication(int x, int y) {
 //        return x * y;
 //    }
-//
-//    public static int division(int x, int y) {
+//    public static double division(double x, double y) {
 //        return x / y;
 //    }
-//
 //    public static int modulo(int x, int y) {
 //        return x % y;
 //    }
 
-//    public static int getInteger(int i, int min, int max){
-//        if (i > min && i < max){
-//            System.out.println("Yip yip");
-//        } else {
-//            System.out.println("Woof woof");
-//        }
-//    }
- public static double dice(double sides){
-     double random = Math.floor(java.lang.Math.random() * sides);
-     return random;
- }
+    public static int getInteger(int min, int max) {
+        Scanner scanner = new Scanner(System.in);
+        System.out.printf("Enter and integer between %d and %d:%n", min, max);
+        int userInput = scanner.nextInt();
+        if (userInput >= min && userInput <= max) {
+            System.out.printf("You entered %d", userInput);
+            return userInput;
+    } else {
+        System.out.printf("You entered %d, which is out of the range", userInput);
+    }   return getInteger(1,10);
+
+}
 
 
-// static long factorial(long n) {
-//         if (n !=0)
-//         return n * factorial(n-1); //https://www.programiz.com/java-programming/recursion used recursion method
+ static long factorial(long n) {
+         if (n !=0)
+             return n * factorial(n-1); //https://www.programiz.com/java-programming/recursion used recursion method
 //         from website
-//         else return 1;
-//     }
+         else return 1;
+     }
+
+     public static int generateNumber(int max){
+        return (int) Math.round(Math.random() * max);
+     }
+
+public static void rollDice(){
+
+            Scanner scanner = new Scanner(System.in);
+            System.out.println("Enter a number of sides for a pair of dice:");
+            byte numberOfSides = scanner.nextByte();
+                System.out.printf("Your dice have %d sides total.%n", numberOfSides);
+            System.out.println("Do you want to roll? (y/n): ");
+            String userContinue = scanner.next();
+            if (userContinue.equalsIgnoreCase("y")){
+                System.out.println("You rolled the dice!");
+                System.out.printf("You rolled %d and %d!%n", generateNumber(numberOfSides),
+                        generateNumber(numberOfSides));
+            }
+        }
+
+
+
+
+
+
+
+
 
 
     public static void main(String[] args) {
@@ -58,24 +82,19 @@ public class MethodsExercise {
 //
 //            long number = enterNumber, result;
 //            result = factorial(number);
-//            System.out.println(number + "! = " + result);
+//            System.out.println("The factorial of " + number + " is " + result);
 //            System.out.println("Do you want to enter another number? (y/n): ");
 //            userContinue = scanner.next();
 //        }
 
 
-        Scanner scanner = new Scanner(System.in);
-        String userContinue = "y";
-        while (userContinue.equalsIgnoreCase("y")) {
-            System.out.println("Enter a number of sides for a pair of dice:");
-            double enterNumber = scanner.nextInt();
 
-            double number = enterNumber, result;
-            result = dice(number);
-            System.out.println(number + " sides = You rolled " + result);
-            System.out.println("Do you want to enter another number to roll again? (y/n): ");
-            userContinue = scanner.next();
-        }
+
+
+       // getInteger(1,10);
+        rollDice();
+
+
 
         }
 
