@@ -35,11 +35,12 @@ public class MethodsExercise {
  }
 
 
- static int factorial(int n) {
-     if (n !=0)
+ static long factorial(long n) {
+
+         if (n !=0)
          return n * factorial(n-1);
-     else return 1;
- }
+         else return 1;
+     }
 
 
     public static void main(String[] args) {
@@ -49,11 +50,21 @@ public class MethodsExercise {
 //        System.out.println(division(1312,4));
 //        System.out.println(modulo(20,3));
 
-        int number = 4, result;
-        result = factorial(number);
-        System.out.println(number + "! = " + result);
+        Scanner scanner = new Scanner(System.in);
+        String userContinue = "y";
+        while (userContinue.equalsIgnoreCase("y")) {
+            System.out.println("Enter a number:");
+            long enterNumber = scanner.nextInt();
 
+            long number = enterNumber, result;
+            result = factorial(number);
+            System.out.println(number + "! = " + result);
+            System.out.println("Do you want to enter another number? (y/n): ");
+            userContinue = scanner.next();
+        }
 
+        }
 
     }
-}
+
+
