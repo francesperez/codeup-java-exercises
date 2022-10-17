@@ -29,18 +29,18 @@ public class MethodsExercise {
 //            System.out.println("Woof woof");
 //        }
 //    }
- public static double dice(int sides){
+ public static double dice(double sides){
      double random = Math.floor(java.lang.Math.random() * sides);
      return random;
  }
 
 
- static long factorial(long n) {
-
-         if (n !=0)
-         return n * factorial(n-1);
-         else return 1;
-     }
+// static long factorial(long n) {
+//         if (n !=0)
+//         return n * factorial(n-1); //https://www.programiz.com/java-programming/recursion used recursion method
+//         from website
+//         else return 1;
+//     }
 
 
     public static void main(String[] args) {
@@ -50,16 +50,30 @@ public class MethodsExercise {
 //        System.out.println(division(1312,4));
 //        System.out.println(modulo(20,3));
 
+//        Scanner scanner = new Scanner(System.in);
+//        String userContinue = "y";
+//        while (userContinue.equalsIgnoreCase("y")) {
+//            System.out.println("Enter a number:");
+//            long enterNumber = scanner.nextInt();
+//
+//            long number = enterNumber, result;
+//            result = factorial(number);
+//            System.out.println(number + "! = " + result);
+//            System.out.println("Do you want to enter another number? (y/n): ");
+//            userContinue = scanner.next();
+//        }
+
+
         Scanner scanner = new Scanner(System.in);
         String userContinue = "y";
         while (userContinue.equalsIgnoreCase("y")) {
-            System.out.println("Enter a number:");
-            long enterNumber = scanner.nextInt();
+            System.out.println("Enter a number of sides for a pair of dice:");
+            double enterNumber = scanner.nextInt();
 
-            long number = enterNumber, result;
-            result = factorial(number);
-            System.out.println(number + "! = " + result);
-            System.out.println("Do you want to enter another number? (y/n): ");
+            double number = enterNumber, result;
+            result = dice(number);
+            System.out.println(number + " sides = You rolled " + result);
+            System.out.println("Do you want to enter another number to roll again? (y/n): ");
             userContinue = scanner.next();
         }
 
