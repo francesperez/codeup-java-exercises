@@ -24,9 +24,12 @@ public class Person {
     }
 
     public static void main(String[] args) {
-        Person name = new Person();
-        name.setName("Frances");
-        name.sayHello();
+        Person person = new Person();
+        person.setName("Frances");
+        person.sayHello();
+
+
+
     }
 
 
