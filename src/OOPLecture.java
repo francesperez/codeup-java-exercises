@@ -121,6 +121,18 @@ class Employee { //defines what the employee properties are and what it's method
     }
 }
 
+//=================VISIBILITY==================
+//private String hitPoints; instance variable set to private
+//setter - set to public
+//public void setHitPoints(int hitPoints){
+//this.hitPoints = hitpoints;
+//}
+//getter -- set to public
+//public int getHitPoints(){
+//return hitPoints
+//}
+//commandN for the getter and setter shortcut
+//code>generate>gettersandsetters>okay
 
 
 
