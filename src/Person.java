@@ -5,6 +5,12 @@ public class Person {
     private String name;
 
 
+    //getter
+    public String getName(){
+//TODO: return the person's name
+        return name;
+    }
+
 //setter
     public void setName(String name){
 //TODO: change the name field to the passed value
@@ -16,23 +22,9 @@ public class Person {
         System.out.printf("Someone told me your name is %s. Hello from me, your loyal Macbook!", name);
     }
 
+    public Person(){} //No arg constructor
 
-//getter
-    public String getName(){
-//TODO: return the person's name
-        return name;
+    public Person(String name) {
+        this.name = name;
     }
-
-    public static void main(String[] args) {
-        Person person = new Person();
-        person.setName("Frances");
-        person.sayHello();
-
-
-
-    }
-
-
-
-
 }//class ending bracket
