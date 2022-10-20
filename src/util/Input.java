@@ -14,10 +14,17 @@ public class Input {
 
 
 
+
     public String getString(){
         System.out.println("Enter your input:");
         return scanner.nextLine();
     }
+
+    public String getString(String prompt){
+        System.out.println(prompt);
+        return scanner.nextLine();
+    }
+
 
     public boolean yesNo(){
         System.out.println("Yes or No?");
