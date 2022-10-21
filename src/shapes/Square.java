@@ -6,8 +6,7 @@ public class Square extends Rectangle {
 
 
     public Square(double side){
-        super.length = side;
-        super.width = side;
+        super(side,side);
     }
     public double getArea() {
         System.out.println("I was overridden!");
