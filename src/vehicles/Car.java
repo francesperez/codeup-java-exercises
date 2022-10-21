@@ -2,9 +2,8 @@ package vehicles;
 
 public class Car extends Vehicle{
 
-    public void makeNoise(){
-        super.makeNoise();
-        System.out.println("Beeeuepp!");
+    public Car(String name){
+        this.setName(name);
     }
 
 }

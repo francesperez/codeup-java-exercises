@@ -12,10 +12,6 @@ public class VehicleTest {
     System.out.print(motorcycle.getName() + " made the sound: ");
     motorcycle.makeNoise();
 
-    Car car = new Car();
-    car.setName("Car");
-    System.out.print(car.getName() + " made the sound: ");
-    car.makeNoise();
 }
 
 }
