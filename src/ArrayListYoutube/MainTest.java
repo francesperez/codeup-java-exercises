@@ -8,7 +8,7 @@ public class MainTest {
 //    They only store reference data types.
     public static void main(String[] args) {
 
-        ArrayList<String> food = new ArrayList<String>();
+        ArrayList<String> food = new ArrayList<>(); //Second <> is empty
 
         //We will need to import ArrayList
 
@@ -21,7 +21,7 @@ public class MainTest {
         //.set is used to replace using (index, element). So, here we are replacing the 0
         // index, "pizza" with sushi!
 
-        for(int i=0; i < food.size; i++){
+        for(int i=0; i < food.size(); i++){
             System.out.println(food.get(i));
         }
 
