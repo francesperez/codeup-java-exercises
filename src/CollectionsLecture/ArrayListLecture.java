@@ -1,13 +1,10 @@
 package CollectionsLecture;
 
-import movies.MoviesArray;
-
 import java.util.ArrayList;
-import java.util.Collection;
 import java.util.Collections;
 import java.util.List;
 
-public class MainTest {
+public class ArrayListLecture {
     public static void main(String[] args) {
 
 //   A collection is a data structure that can be used to group, or collect, objects. The Java standard library, a collection of code that comes with the Java language, contains many collections to help with common programming tasks.
