@@ -15,7 +15,7 @@ public class HashMapLecture {
 
     public static <Strings> void main(String[] args) {
 //==========================HOW TO CREATE A HASHMAP================================
-//Create a new HashMap defining the key and valie data types between angle brackets
+//Create a new HashMap defining the key and value data types between angle brackets
             HashMap<String, String> countries = new HashMap<>();
 
 //Add a key-value pair to the HashMap using .put()
