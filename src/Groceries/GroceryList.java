@@ -14,6 +14,7 @@ public class GroceryList {
         do{
             System.out.println("Do you want to make a grocery list? (y/n)"); //Replace this with your code
             choice = scanner.next();
+
         }while (choice.equalsIgnoreCase("y"));
         scanner.close();
 
