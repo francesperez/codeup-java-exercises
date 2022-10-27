@@ -4,6 +4,8 @@ import java.io.File;
 
 public class FileIOYoutubeLecture {
 //file = an abstract representation of file and directory path names
+//    The purpose of file IO is that it allows us to read and write to files.
+//    Example: server error logs
 public static void main(String[] args) {
 
 
